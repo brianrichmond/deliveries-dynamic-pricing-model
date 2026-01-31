@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data files (you may want to keep small sample data)
+data/raw/*
+data/processed/*
+*.csv
+*.xlsx
+*.db
+
+# Mac specific
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Model files (if large)
+*.pkl
+*.h5
+*.joblib
