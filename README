@@ -1,0 +1,164 @@
+# Deliveries Dynamic Pricing Model
+
+## Overview
+Analysis and modeling of delivery pricing to develop a dynamic pricing strategy that optimizes revenue while maintaining competitive pricing and customer satisfaction.
+
+**Goal:** Build a data-driven dynamic pricing model for delivery services that accounts for key factors such as distance, time, demand, and market conditions.
+
+**Dataset:** [Brief description of the data source, size, and key features - e.g., "Historical delivery data including 10,000+ transactions with features like distance, time of day, weather conditions, and pricing"]
+
+---
+
+## Project Structure
+```
+.
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── raw/                          # Original, immutable data
+│   └── processed/                    # Cleaned and transformed data
+├── notebooks/
+│   └── dynamic_pricing_model.ipynb   # Main analysis notebook
+├── src/                              # Helper functions/scripts (if any)
+└── presentation/                     # Final presentation slides
+```
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+- Python 3.8+ (tested on Python 3.x)
+- pip or conda package manager
+
+### Installation
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/yourusername/deliveries-dynamic-pricing-model.git
+   cd deliveries-dynamic-pricing-model
+   ```
+
+2. **Create a virtual environment** (recommended)
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Launch Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
+   Navigate to `notebooks/analysis.ipynb` to view the analysis.
+
+---
+
+## Methodology
+
+### 1. Data Exploration
+- Initial data inspection and quality assessment
+- Analysis of pricing patterns across different delivery scenarios
+- Correlation analysis between features and pricing
+- Temporal patterns (time of day, day of week, seasonality)
+
+### 2. Data Cleaning & Preprocessing
+- Handling missing values and outliers
+- Feature engineering (e.g., rush hour indicators, distance bins, demand scores)
+- Data normalization and scaling
+- Train/test split for model validation
+
+### 3. Analysis & Modeling
+- Exploratory analysis of key pricing drivers
+- Feature importance analysis
+- Model development and comparison (e.g., Linear Regression, Random Forest, Gradient Boosting)
+- Model evaluation and validation
+- Price elasticity analysis
+
+### 4. Key Findings
+- **Finding 1:** [Brief description - e.g., "Peak hours (6-9 PM) show 35% higher average delivery prices"]
+- **Finding 2:** [Brief description - e.g., "Distance is the primary driver, accounting for 60% of price variance"]
+- **Finding 3:** [Brief description - e.g., "Weather conditions significantly impact pricing during extreme events"]
+
+---
+
+## Results Summary
+
+[2-3 sentences highlighting the most important outcomes - e.g., "The Random Forest model achieved 92% accuracy in predicting delivery prices with a mean absolute error of $1.50. The model identifies distance, time of day, and local demand as the top three pricing factors. The proposed dynamic pricing strategy is estimated to increase revenue by 15-20% while maintaining competitive positioning."]
+
+**Key Metrics:**
+- **Model Accuracy (R²):** [Value - e.g., 0.92]
+- **Mean Absolute Error:** [Value - e.g., $1.50]
+- **Predicted Revenue Improvement:** [Value - e.g., 15-20%]
+
+---
+
+## Files Description
+
+- **`notebooks/analysis.ipynb`**: Complete analysis workflow with code, visualizations, and narrative
+- **`requirements.txt`**: Python package dependencies
+- **`presentation/slides.pdf`**: 5-slide presentation summarizing the project
+- **`data/`**: Data files (note: large files may be stored separately or gitignored)
+
+---
+
+## Technologies Used
+
+- **Python 3.x**
+- **Pandas** - Data manipulation and analysis
+- **NumPy** - Numerical computing
+- **Matplotlib/Seaborn** - Data visualization
+- **Scikit-learn** - Machine learning models and evaluation
+- **Jupyter Notebook** - Interactive analysis environment
+
+---
+
+## Reproducibility Notes
+
+To reproduce the analysis:
+1. Follow setup instructions above
+2. Ensure all data files are in the `data/raw/` directory
+3. Run all cells in `notebooks/analysis.ipynb` from top to bottom
+
+**Note:** Random seed is set to `42` for reproducible results where applicable.
+
+---
+
+## Dynamic Pricing Recommendations
+
+[This section can include high-level recommendations such as:]
+- Implement surge pricing during peak demand hours (6-9 PM weekdays)
+- Apply distance-based tiering with multipliers for long-distance deliveries
+- Weather-based adjustments for extreme conditions
+- Competitive monitoring to ensure market alignment
+
+---
+
+## Future Improvements
+
+- Incorporate real-time traffic data for more accurate delivery time estimates
+- A/B testing framework to validate pricing changes
+- Customer segmentation for personalized pricing strategies
+- Integration with external APIs (weather, traffic, competitor pricing)
+- Time-series forecasting for demand prediction
+
+---
+
+## Contact
+
+Brian Richmond
+https://www.linkedin.com/in/brian-richmond/
+https://github.com/brianrichmond
+
+---
+
+## Acknowledgments
+
+
+---
+
+**Last Updated:** January 2026
